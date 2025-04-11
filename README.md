@@ -2,6 +2,16 @@
 
 Aplicación web para eliminar silencios de videos y generar transcripciones automáticas.
 
+## Archivos Necesarios
+
+Debido a las limitaciones de tamaño de GitHub, algunos archivos necesarios deben descargarse por separado:
+
+1. **AEGPU.exe**: Descargar desde [Auto-Editor GPU Releases](https://github.com/petermg/auto-editor/releases/latest)
+2. **FFmpeg**: Descargar desde [FFmpeg Official Website](https://ffmpeg.org/download.html)
+3. **Faster-Whisper**: Descargar desde [Hugging Face](https://huggingface.co/Systran/faster-whisper-large-v3)
+
+Coloca estos archivos en el directorio raíz del proyecto antes de ejecutar la aplicación.
+
 ## Características
 
 - Eliminación automática de silencios en videos
@@ -35,12 +45,13 @@ Aplicación web para eliminar silencios de videos y generar transcripciones auto
 ## Instalación Local
 
 1. Clona este repositorio
-2. Instala las dependencias:
+2. Descarga los archivos necesarios mencionados arriba
+3. Instala las dependencias:
    ```bash
    pip install -r requirements.txt
    ```
-3. Instala FFmpeg en tu sistema
-4. Ejecuta la aplicación:
+4. Instala FFmpeg en tu sistema
+5. Ejecuta la aplicación:
    ```bash
    streamlit run app.py
    ```
@@ -50,6 +61,10 @@ Aplicación web para eliminar silencios de videos y generar transcripciones auto
 - Para el procesamiento de videos grandes, se recomienda usar un servicio con suficiente memoria y CPU
 - La transcripción con Whisper requiere más recursos que la de Google
 - Los archivos temporales se eliminan automáticamente después del procesamiento
+
+## Licencia
+
+Ver archivo `license.txt` para más detalles.
 
 # Cortador de Silencios - Solución de Errores y Procesamiento Optimizado
 
